@@ -11,6 +11,12 @@ from sklearn.metrics import auc
 from sklearn.metrics import roc_curve
 from sklearn.metrics import roc_auc_score
 
+import altair as alt
+import pandas as pd
+import numpy as np
+
+alt.data_transformers.disable_max_rows()
+
 AVAILABLE_SCORE_FUNCTIONS = [
     f1_score, 
     accuracy_score, 
