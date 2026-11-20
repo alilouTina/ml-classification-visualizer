@@ -1,0 +1,25 @@
+{
+ "model_type": "indra-ocr",
+ "library": "indra-ocr",
+ "install": "pip install indra-ocr",
+ "framework": "onnxruntime",
+ "files": [
+  "det.onnx",
+  "lm.npz",
+  "lm_cjk.npz",
+  "lm_world.npz",
+  "math_dec_init.onnx",
+  "math_dec_step.onnx",
+  "math_enc.onnx",
+  "mathcls.onnx",
+  "meta.json",
+  "order.onnx",
+  "orient.onnx",
+  "rec.onnx",
+  "rec_cjk.onnx",
+  "rec_rtl.onnx",
+  "rec_world.onnx",
+  "script.onnx"
+ ],
+ "note": "Indra OCR runs the .onnx files with onnxruntime (pip install indra-ocr). The .npz files are n-gram language models for unsure lines. model.safetensors holds the float weights of rec.onnx, the Latin-script recognizer, for the Hub parameter count; the package does not use it."
+}
